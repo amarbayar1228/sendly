@@ -1,0 +1,13 @@
+.btnBounce{
+    @apply flex items-center justify-between bg-blue-600 text-white py-3 pl-5 pr-3 text-xs focus:outline-none focus:ring focus:ring-blue-300;
+} 
+.btnBounce:hover{
+    @apply bg-blue-500;
+}
+.btnArray{
+    @apply pl-3 flex items-center
+}
+.btnBounce:hover .btnArray {
+    @apply pl-3 animate-trans-right duration-300;
+}
+  

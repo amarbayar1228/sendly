@@ -1,0 +1,13 @@
+.btnBounce{
+    @apply flex items-center bg-transparent text-blue-600 text-xs;
+} 
+.btnBounce:hover{
+    @apply text-blue-700;
+}
+.btnArray{
+    @apply pl-2 flex items-center
+}
+.btnBounce:hover .btnArray {
+    @apply pl-2 animate-trans-right;
+}
+  
