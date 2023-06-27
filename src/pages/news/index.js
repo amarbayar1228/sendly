@@ -6,11 +6,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
+import "swiper/css"; 
 import "swiper/css/pagination"; 
 import "swiper/css/navigation";
-import "swiper/css/scrollbar";
+
 import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar,   } from "swiper";
 import { useCallback, useRef } from "react";
  
@@ -42,10 +41,14 @@ const News = (props) =>{
           {posts ? 
           <> 
            <Swiper
-            modules={[Navigation, Scrollbar]}
+            modules={[Navigation, Scrollbar,  Pagination]}
             spaceBetween={6}
             slidesPerView={4}
-            navigation 
+            navigation
+            // centeredSlides={true} 
+            pagination={{
+              type: "progressbar",
+            }}
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
             className="w-full bg-white"
@@ -66,11 +69,7 @@ const News = (props) =>{
           </Swiper> 
           </> : null}</> }
           
-            <div className="flex rounded-lg">
-                <div className="w-64 h-1 bg-sky-500 rounded-lg"></div>
-                <div className="w-3/5 h-1 bg-sky-200 rounded-lg"></div>
-            </div>
-
+             
           </div>
   
       </section> 

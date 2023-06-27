@@ -4,14 +4,18 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination"; 
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
-import { Navigation, Pagination, Mousewheel, Keyboard, Scrollbar,   } from "swiper";
+import { Navigation, Pagination, Mousewheel, Autoplay, Scrollbar,   } from "swiper";
 import { useCallback, useRef } from "react";
 const Banner = () =>{
     return<div>
          <Swiper
-            modules={[Navigation, Scrollbar, ]}
+            modules={[Navigation, Scrollbar,Autoplay ]} 
             spaceBetween={0}
             slidesPerView={1}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
             navigation 
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}

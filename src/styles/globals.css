@@ -25,3 +25,40 @@ html::-webkit-scrollbar-thumb:hover {
   border-radius: 10px;
   background-color: rgb(37 99 235);
 } 
+
+
+.swiper-button-next{
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 2px #ccc;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 25px;
+}
+.swiper-button-next:after {
+  font-size: 10px !important;
+  content: 'next';
+  font-weight: bold;
+}
+.swiper-button-prev{
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 2px #ccc;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 25px;
+}
+.swiper-button-prev:after {
+  font-size: 10px !important;
+  content: 'next';
+  font-weight: bold;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background-color: rgb(14 165 233)!important;
+}
+.swiper-pagination-progressbar{
+  background-color: rgb(224 242 254)!important;
+  
+}
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+  bottom: 0 !important;
+  top: auto !important;
+}
